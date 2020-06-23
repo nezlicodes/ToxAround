@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToxSimgleComponent } from './tox-simgle.component';
+import { ToxSingleComponent } from './tox-single.component';
 
-describe('ToxSimgleComponent', () => {
-  let component: ToxSimgleComponent;
-  let fixture: ComponentFixture<ToxSimgleComponent>;
+describe('ToxSingleComponent', () => {
+  let component: ToxSingleComponent;
+  let fixture: ComponentFixture<ToxSingleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ToxSimgleComponent ]
+      declarations: [ ToxSingleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ToxSimgleComponent);
+    fixture = TestBed.createComponent(ToxSingleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
