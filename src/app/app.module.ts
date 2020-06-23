@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ToxCreateComponent } from './tox-create/tox-create.component';
 import { ToxListComponent } from './tox-list/tox-list.component';
-import { ToxSimgleComponent } from './tox-simgle/tox-simgle.component';
 import { ToxSingleComponent } from './tox-single/tox-single.component';
 
 @NgModule({
@@ -12,7 +11,6 @@ import { ToxSingleComponent } from './tox-single/tox-single.component';
     AppComponent,
     ToxCreateComponent,
     ToxListComponent,
-    ToxSimgleComponent,
     ToxSingleComponent
   ],
   imports: [
