@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ToxCreateComponent } from './tox-create/tox-create.component';
 import { ToxListComponent } from './tox-list/tox-list.component';
 import { ToxSingleComponent } from './tox-single/tox-single.component';
+import { HttpClient } from '@angular/common/http';
+import { ToxServiceService } from './services/tox-service.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { ToxSingleComponent } from './tox-single/tox-single.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClient
   ],
-  providers: [],
+  providers: [ToxServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
