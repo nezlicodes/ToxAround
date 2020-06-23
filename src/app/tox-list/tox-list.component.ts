@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { ToxServiceService } from '../services/tox-service.service'
+import ToxMolecule from '../models/toxMoleculeModel'
 
 @Component({
   selector: 'app-tox-list',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tox-list.component.css']
 })
 export class ToxListComponent implements OnInit {
+  public molecules: ToxMolecule[] = []
+  constructor (private _ts: ToxServiceService) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit () {
+    this.getMolecules();
   }
 
+  getMolecules () {
+    return this._ts
+      .ReadAllToxMol()
+      .subscribe(res => console.log(res))
+  }
 }
