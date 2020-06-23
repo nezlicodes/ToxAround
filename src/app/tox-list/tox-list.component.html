@@ -1,1 +1,14 @@
-<p>tox-list works!</p>
+<div class="container">
+    <div style="display: flex; justify-content:center; align-content: center; flex-wrap:wrap">
+        <div *ngFor="let tox of molecules" class="card" style="width: 18rem; margin:1em">
+            <img src="{{tox.moleculeImage}}" class="card-img-top">
+            <h6 class="card-subtitle mb-2 text-muted">{{ tox.moleculeClasse}}</h6>
+            <div class="card-body">
+                <h5 class="card-title"> {{ tox.moleculeName }}</h5>
+                <p class="card-text">{{ tox.moleculeDescription }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+</div>

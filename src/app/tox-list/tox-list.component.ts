@@ -18,6 +18,6 @@ export class ToxListComponent implements OnInit {
   getMolecules () {
     return this._ts
       .ReadAllToxMol()
-      .subscribe(res => console.log(res))
+      .subscribe(res => this.molecules = res);
   }
 }
