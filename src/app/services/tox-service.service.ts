@@ -19,6 +19,6 @@ export class ToxServiceService {
   }
 
   deleteToxMol(id:Number): Observable<any> {
-    return this._http.delete("http://localhot:3004/" + id);
+    return this._http.delete("http://localhost:3004/toxMolecules/" + id);
   }
 }

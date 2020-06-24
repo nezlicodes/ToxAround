@@ -20,4 +20,8 @@ export class ToxListComponent implements OnInit {
       .ReadAllToxMol()
       .subscribe(res => this.molecules = res);
   }
+
+  deleteMol(id:Number) {
+    return this._ts.deleteToxMol(id).subscribe(res =>{ console.log(res); this.getMolecules()});
+  }
 }
