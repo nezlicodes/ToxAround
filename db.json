@@ -3,21 +3,21 @@
             "id": 1,
             "moleculeName": "acétate de 2-éthoxyéthyle",
             "moleculeClasse": "repro",
-            "moleculeDescription": "\nL’acétate de 2-éthoxyéthyle n’est plus produit, importé ni utilisé dans l’Union euro­péenne depuis 2002[1].        Il a été utilisé comme solvant dans la formulation des peintures, laques et vernis et dans l’industrie (industrie chimique, matières plastiques, nitrocellulose, textile, bois, cuir)",
+            "moleculeDescription": "\nL’acétate de 2-éthoxyéthyle n’est plus produit, importé ni utilisé dans l’Union euro­péenne depuis 2002[1]. ",
             "moleculeImage": "/assets/1.png"
         },
         {
             "id": 2,
             "moleculeName": "DDT",
             "moleculeClasse": "cancerogene",
-            "moleculeDescription": "\nCe nom commun lindane est réservé aux produits contenant au moins 99 % de γ-1,2,3,4,5,6-hexachlorocyclohexane ; l'hexachlorocyclohexane technique qui correspond à un mélange des différents steréoisomères du produit n'est pratiquement plus utilisé.",
+            "moleculeDescription": "\nCe nom commun lindane est réservé aux produits contenant au moins 99 % de γ-1,2,3,4,5,6-hexachlorocyclohexane .",
             "moleculeImage": "/assets/2.jpg"
         },
         {
             "id": 3,
             "moleculeName": "bromométhane",
             "moleculeClasse": "mutagene",
-            "moleculeDescription": "\nLe bromométhane ou bromure de méthyle est une des substances visées par le proto­cole de Montréal et par le règlement (CE) n° 2037/2000 du Parlement européen et du Conseil relatifs à des substances qui appauvrissent la couche d’ozone. La production et la mise…",
+            "moleculeDescription": "\nLe bromométhane ou bromure de méthyle est une des substances visées par le proto­cole de Montréal et par le règlement (CE) n° 2037/2000 du Parlement européen ",
             "moleculeImage": "/assets/3.jpg"
         },
         {

@@ -1,17 +1,19 @@
 <div class="container">
     <div style="display: flex; justify-content:center; align-content: center; flex-wrap:wrap">
-        <div *ngFor="let tox of molecules" class="card" style="width: 18rem; margin:1em;">
-            <img src="{{tox.moleculeImage}}" class="card-img-top">
-
-            <div class="card-body">
-                <h5 class="card-title"> {{ tox.moleculeName }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{ tox.moleculeClasse}}</h6>
-                <p class="card-text">{{ tox.moleculeDescription }}</p>
-                <a class="btn btn-danger" (click)="deleteMol(tox.id)">Delete</a>
+        <div *ngFor="let tox of molecules" class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="{{tox.moleculeImage}}" class="card-img-top">
+                </div>
+                <div v class="flip-card-back">
+                    <h5> {{ tox.moleculeName }}</h5>
+                    <h6>{{ tox.moleculeClasse}}</h6>
+                    <p>{{ tox.moleculeDescription }}</p>
+                    <a class="btn btn-danger" (click)="deleteMol(tox.id)">Delete</a>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
 
 <!-- TODO
