@@ -6,9 +6,9 @@
 
                 </div>
                 <div v class="flip-card-back">
-                    <h5> {{ tox.moleculeName }}</h5>
-                    <h6>{{ tox.moleculeClasse}}</h6>
-                    <p>{{ tox.moleculeDescription }}</p>
+                    <h5 class="card-title"> {{ tox.moleculeName }}</h5>
+                    <h6 class="card-subtitle">{{ tox.moleculeClasse}}</h6>
+                    <p class="card-description">{{ tox.moleculeDescription }}</p>
                     <a class="btn btn-danger" (click)="deleteMol(tox.id)">Delete</a>
                 </div>
             </div>
