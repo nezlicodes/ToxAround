@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
+import { ToxServiceService } from '../services/tox-service.service'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-tox-create',
@@ -9,7 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 export class ToxCreateComponent implements OnInit {
   toxData: FormGroup
   imageURL: string
-  constructor (private fb: FormBuilder) {}
+  constructor (private fb: FormBuilder, private _toxs:ToxServiceService, private _router:Router) {}
 
   ngOnInit () {
     this.toxData = this.fb.group({
@@ -36,5 +38,6 @@ export class ToxCreateComponent implements OnInit {
 
   submit () {
     console.log(this.toxData.value)
+    //this._toxs.createToxMol(this.toxData.value).subscribe(res => this._router.navigate(['/']) )
   }
 }
