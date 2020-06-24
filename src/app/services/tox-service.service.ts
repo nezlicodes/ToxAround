@@ -17,4 +17,8 @@ export class ToxServiceService {
   createToxMol (newMol: ToxMolecule): Observable<any> {
     return this._http.post('http://localhost:3004/toxMolecules', newMol)
   }
+
+  deleteToxMol(id:Number): Observable<any> {
+    return this._http.delete("http://localhot:3004/" + id);
+  }
 }
