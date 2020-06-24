@@ -2,8 +2,8 @@
     <div style="display: flex; justify-content:center; align-content: center; flex-wrap:wrap">
         <div *ngFor="let tox of molecules" class="flip-card">
             <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="{{tox.moleculeImage}}" class="card-img-top">
+                <div class="flip-card-front" [style.background-image]="'url('+tox.moleculeImage+')'" style="background-size:cover; background-repeat:no-repeat">
+
                 </div>
                 <div v class="flip-card-back">
                     <h5> {{ tox.moleculeName }}</h5>
