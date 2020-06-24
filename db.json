@@ -27,6 +27,13 @@
       "moleculeDescription": "L'arsenic est assez répandu dans la nature.",
       "moleculeImage": {},
       "id": 4
+    },
+    {
+      "moleculeName": "Arsenic",
+      "moleculeClasse": "cancerogene",
+      "moleculeDescription": "L'arsenic est assez répandu dans la nature.",
+      "moleculeImage": "/assets/4.jpg",
+      "id": 5
     }
   ]
 }

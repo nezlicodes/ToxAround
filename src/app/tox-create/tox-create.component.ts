@@ -25,7 +25,7 @@ export class ToxCreateComponent implements OnInit {
   showPreview (event) {
     const file = (event.target as HTMLInputElement).files[0]
     this.toxData.patchValue({
-      moleculeImage: file
+      moleculeImage: '/assets/' + file.name
     })
     this.toxData.get('moleculeImage').updateValueAndValidity()
 
@@ -37,7 +37,6 @@ export class ToxCreateComponent implements OnInit {
   }
 
   submit () {
-    console.log(this.toxData.value)
-    //this._toxs.createToxMol(this.toxData.value).subscribe(res => this._router.navigate(['/']) )
+    this._toxs.createToxMol(this.toxData.value).subscribe(res => this._router.navigate(['/']) )
   }
 }
