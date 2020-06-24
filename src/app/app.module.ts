@@ -8,13 +8,15 @@ import { ToxListComponent } from './tox-list/tox-list.component';
 import { ToxSingleComponent } from './tox-single/tox-single.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ToxServiceService } from './services/tox-service.service';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToxCreateComponent,
     ToxListComponent,
-    ToxSingleComponent
+    ToxSingleComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
