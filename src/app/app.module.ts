@@ -9,6 +9,7 @@ import { ToxSingleComponent } from './tox-single/tox-single.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ToxServiceService } from './services/tox-service.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AirPollutionComponent } from './air-pollution/air-pollution.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     ToxCreateComponent,
     ToxListComponent,
     ToxSingleComponent,
-    NavbarComponent
+    NavbarComponent,
+    AirPollutionComponent
   ],
   imports: [
     BrowserModule,
