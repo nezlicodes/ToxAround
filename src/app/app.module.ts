@@ -14,6 +14,10 @@ import { AirPollutionComponent } from './air-pollution/air-pollution.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
 import {ButtonModule} from 'primeng/button';
+import {SplitButtonModule} from 'primeng/splitbutton';
+import {MenuModule} from 'primeng/menu';
+import {ToolbarModule} from 'primeng/toolbar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +36,10 @@ import {ButtonModule} from 'primeng/button';
     HttpClientModule,
     InputTextModule,
     CalendarModule,
-    ButtonModule
+    ButtonModule,
+    MenuModule,
+    ToolbarModule,
+    SplitButtonModule
   ],
   providers: [ToxServiceService],
   bootstrap: [AppComponent]
