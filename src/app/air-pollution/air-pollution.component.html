@@ -2,14 +2,17 @@
     <div class="p-grid">
         <div class="p-col"></div>
         <div class="p-col form">
-            <form [formGroup]="userData">
+            <form [formGroup]="userData" (ngSubmit)="logData()">
                 <div class="p-grid">
                     <div class="p-col">
                         <label for="lastname">Nom:</label>
                         <div class="ui-inputgroup">
                             <span class="ui-inputgroup-addon"><i class="pi pi-user"></i></span>
                             <input type="text" formControlName="lastname" pInputText id="lastname" placeholder="nom">
-                        </div>
+
+                        </div> <span class="text-danger" *ngIf="userData.controls.lastname?.errors && (userData.controls.lastname?.touched || userData.controls.lastname?.dirty)">
+                                Le champ nom est requis.
+                              </span>
                     </div>
                     <div class="p-col">
                         <label for="firstname">Prenom:</label>
@@ -17,6 +20,9 @@
                             <span class="ui-inputgroup-addon"><i class="pi pi-user"></i></span>
                             <input type="text" formControlName="firstname" id="firstname" pInputText placeholder="prenom">
                         </div>
+                        <span class="text-danger" *ngIf="userData.controls.firstname?.errors && (userData.controls.firstname?.touched || userData.controls.firstname?.dirty)">
+                            Le champ nom est requis.
+                          </span>
                     </div>
                 </div>
 
@@ -27,17 +33,28 @@
                             <span class="ui-inputgroup-addon"><i class="pi pi-envelope"></i></span>
                             <input type="email" formControlName="email" pInputText id="email" placeholder="email">
                         </div>
+                        <span class="text-danger" *ngIf="userData.controls.email?.errors && (userData.controls.email?.touched || userData.controls.email?.dirty)">
+                            Le champ nom est requis.
+                          </span>
                     </div>
 
                     <div class="p-col">
-                        <label for="email">Choisissiez une date de début:</label>
+                        <label for="sessionDate">Choisissiez une date de début:</label>
                         <div class="ui-inputgroup">
-                            <span class="ui-inputgroup-addon"><i class="pi pi-calendar "></i></span>
-                            <p-calendar dateFormat="dd.mm.yy" formControlName="sessionDate" placeholder="date"></p-calendar>
+                            <span class="ui-inputgroup-addon"><i class="pi pi-calendar"></i></span>
+                            <p-calendar dateFormat="dd.mm.yy" id="sessionDate" formControlName="sessionDate"></p-calendar>
                         </div>
+                        <span class="text-danger" *ngIf="userData.controls.sessionDate?.errors && (userData.controls.sessionDate?.touched || userData.controls.sessionDate?.dirty)">
+                            Le champ nom est requis.
+                          </span>
                     </div>
                 </div>
+                <div class="">
+
+                    <button pButton [disabled]="!userData.valid" type="submit" label="Click" class="ui-button-success ui-button-rounded"></button>
+                </div>
             </form>
+
         </div>
     </div>
 </div>
@@ -46,10 +63,19 @@
 <style>
     .p-container {
         height: 80vh;
-        background-image: linear-gradient(rgba(85, 61, 61, 0.596) 0%, rgba(211, 211, 211, 0.5) 100%), url('/assets/5.png');
+        background-image: linear-gradient(to right, rgba(85, 61, 61, 0.089) 0%, rgba(211, 211, 211, 0.89) 100%), url('/assets/5.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
         ;
+    }
+    
+    label {
+        color: white;
+        font-size: 110%;
+    }
+    
+    .text-danger {
+        color: #d50000;
     }
 </style>

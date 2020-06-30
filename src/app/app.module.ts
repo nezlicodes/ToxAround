@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AirPollutionComponent } from './air-pollution/air-pollution.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
+import {ButtonModule} from 'primeng/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import {CalendarModule} from 'primeng/calendar';
     HttpClientModule,
     InputTextModule,
     CalendarModule,
+    ButtonModule
   ],
   providers: [ToxServiceService],
   bootstrap: [AppComponent]

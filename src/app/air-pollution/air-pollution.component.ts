@@ -11,7 +11,7 @@ export class AirPollutionComponent implements OnInit {
 
   private userData:FormGroup
   ngOnInit () {
-    this._fb.group({
+    this.userData = this._fb.group({
       lastname: [null, Validators.required],
       firstname: [null, Validators.required],
       sessionDate: [null, Validators.required],
@@ -19,5 +19,9 @@ export class AirPollutionComponent implements OnInit {
     });
   }
 
+  logData() {
+    console.log(this.userData.value)
+    this.userData.reset()
+  }
  
 }
