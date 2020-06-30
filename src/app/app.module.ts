@@ -4,28 +4,26 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ToxCreateComponent } from './tox-create/tox-create.component';
-import { ToxListComponent } from './tox-list/tox-list.component';
-import { ToxSingleComponent } from './tox-single/tox-single.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ToxServiceService } from './services/tox-service.service';
 import { NavbarComponent } from './navbar/navbar.component';
-import { AirPollutionComponent } from './air-pollution/air-pollution.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
 import {ButtonModule} from 'primeng/button';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import {MenuModule} from 'primeng/menu';
 import {ToolbarModule} from 'primeng/toolbar';
+import { ServicesComponent } from './views/services/services.component';
+import { AboutComponent } from './views/about/about.component';
+import { AirPollutionComponent } from './views/home/air-pollution.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToxCreateComponent,
-    ToxListComponent,
-    ToxSingleComponent,
     NavbarComponent,
     AirPollutionComponent,
+   AboutComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
