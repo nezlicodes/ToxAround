@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { ToxServiceService } from './services/tox-service.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AirPollutionComponent } from './air-pollution/air-pollution.component';
 import {InputTextModule} from 'primeng/inputtext';
+import {CalendarModule} from 'primeng/calendar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,12 +24,13 @@ import {InputTextModule} from 'primeng/inputtext';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     InputTextModule,
-
+    CalendarModule,
   ],
   providers: [ToxServiceService],
   bootstrap: [AppComponent]
