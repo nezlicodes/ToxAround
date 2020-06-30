@@ -10,7 +10,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ToxServiceService } from './services/tox-service.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AirPollutionComponent } from './air-pollution/air-pollution.component';
-
+import {InputTextModule} from 'primeng/inputtext';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,14 +18,16 @@ import { AirPollutionComponent } from './air-pollution/air-pollution.component';
     ToxListComponent,
     ToxSingleComponent,
     NavbarComponent,
-    AirPollutionComponent
+    AirPollutionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    InputTextModule,
+
   ],
   providers: [ToxServiceService],
   bootstrap: [AppComponent]
